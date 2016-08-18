@@ -52,14 +52,19 @@
       .current-image {
         border: 1px solid black;
       }
+      .newGame{
+        padding-left: 60px !important;
+        padding-right: 70px !important;
+
+      }
       .next {
         padding-left: 80px !important;
         padding-right: 90px !important;
       }
     </style>
-<!-- -->
 </head>
 <body>
+  <!-- App Title -->
   <div class="container-fluid">
     <div class="row head">
       <div class="col-md-4 col-md-offset-4">
@@ -67,53 +72,59 @@
       </div>
     </div>
   </div>
+  
   <div class="container ">
-  <div class="row hidden-xs hidden-sm">
-  <div class="col-md-3"><h2>Previous Calls</h2></div>
-    <div class="col-md-5 col-md-offset-2">
-          <h2>Current Piece</h2>
+    <!-- Pane Titles -->
+    <div class="row hidden-xs hidden-sm">
+      <div class="col-md-3"><h2>Previous Calls</h2></div>
+      <div class="col-md-5 col-md-offset-2"><h2>Current Piece</h2></div>
     </div>
-  </div>
+
+    <!-- Panes -->
     <div class="row past-calls">
       <div class="hidden-xs hidden-sm col-md-2"> 
         <ul>
         </ul>
       </div>
       <div class="col-md-5 col-md-offset-2">
-      <section class="main-piece"> 
-        <img class="current-image" src="http://www.moonhighway.com/class/assets/car-bingo/2.jpg">
-      </section>
-      </div></div>
-      <div class="row">
-        &nbsp;
+        <section class="main-piece"> 
+          <img class="current-image" src="http://greensportsalliance.org/images/darkGreenSquare.gif">
+        </section>
       </div>
-      <div class="row">
-      <div class="col-md-8 col-md-offset-4">
-      <section class="controls visible-md visible-lg">
+    </div>
 
-      <button type="button" id="pause" class="btn btn-large btn-warning">Pause</button> 
+    <div class="row">&nbsp;</div>
 
-      <button type="button" class="newGame btn btn-large btn-danger">New Game</button><span id="timer">0:00</span>
-      <button type="button" class="btn-large btn btn-primary next">Next</button></div>
-      </section>
-
-      <section class="controls  hidden-md hidden-lg">
-      <span><center id="timer"><span id="minutes">0</span>:<span id="seconds">00</span></center></span>
-      <button type="button" id="pause" class="btn btn-large btn-warning btn-block">Pause</button> 
-
-      <button type="button" class="newGame btn btn-large btn-danger btn-block">New Game</button>
-      <button type="button" class="btn-large btn btn-primary btn-block next">Next</button></div>
-      </section>
-
-
-
-
+    <!-- Controls -->
+    <div class="row">
+      <!-- Controls - Desktop -->
+      <div class="col-md-9 col-md-offset-3">
+        <section class="controls visible-md visible-lg">
+           <button type="button" class="newGame btn btn-large btn-danger">New Game</button>
+           <span><span class="minutes">00</span>:<span class="seconds">00</span></span>
+           <button type="button" class="btn-large btn btn-primary next">Next</button>
+        </section>
       </div>
-      
+      
+      <!-- Controls - Mobile -->
+      <section class="controls  hidden-md hidden-lg">
+      <span><center class="timer"><span class="minutes">00</span>:<span class="seconds">00</span></center></span>
+      <button type="button" class="newGame btn btn-large btn-danger btn-block">New Game</button>
+      <button type="button" class="btn-large btn btn-primary btn-block next">Next</button>
+      </section>
+    </div>
 
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <footer></footer>
+        </div>
+      </div>
+    </div>
 
-      <div class="container-fluid"><div class="row"><div class="col-md-12"><footer></footer></div></div></div>
-  </div>
-   <script src="script.js"></script>
+  </div> <!-- ./container -->
+
+  <script src="script.js"></script>
 </body>
 </html>
